@@ -69,7 +69,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            cursor: pointer;
         }
 
         .kit-card::before {
@@ -112,7 +111,7 @@
 
         .kit-title { font-size: 1.4em; font-weight: 900; text-transform: uppercase; margin: 10px 0; letter-spacing: 1px; }
 
-        /* Цвета для названий рангов с свечением */
+        /* Цвета для названий рангов */
         .title-hero { color: #3498db; text-shadow: 0 0 15px rgba(52, 152, 219, 0.6); }
         .title-baron { color: #95a5a6; text-shadow: 0 0 15px rgba(149, 165, 166, 0.6); }
         .title-titan { color: #e74c3c; text-shadow: 0 0 20px rgba(231, 76, 60, 0.8); }
@@ -213,39 +212,44 @@
     <p class="subtitle">Поддержи сервер и получи крутые плюшки!</p>
 
     <div class="kits-grid">
+        <!-- Герой (картинка hero.png) -->
         <div class="kit-card">
-            <img src="https://i.imgur.com/8QO9U4r.png" alt="Hero">
+            <img src="hero.png" alt="Hero">
             <div class="kit-title title-hero">Герой</div>
             <div class="price">14 ₽</div>
-            <a href="https://donatex.gg/donate/baquew" target="_blank" class="btn-buy">Купить</a>
+            <a href="https://donatex.gg/donate/zwezdak22" target="_blank" class="btn-buy">Купить</a>
         </div>
 
+        <!-- Барон (картинка baron.png) -->
         <div class="kit-card">
-            <img src="https://i.imgur.com/8QO9U4r.png" alt="Baron">
+            <img src="baron.png" alt="Baron">
             <div class="kit-title title-baron">Барон</div>
             <div class="price">25 ₽</div>
-            <a href="https://donatex.gg/donate/baquew" target="_blank" class="btn-buy">Купить</a>
+            <a href="https://donatex.gg/donate/zwezdak22" target="_blank" class="btn-buy">Купить</a>
         </div>
 
+        <!-- Титан (картинка titan.png) -->
         <div class="kit-card">
-            <img src="https://i.imgur.com/8QO9U4r.png" alt="Titan">
+            <img src="titan.png" alt="Titan">
             <div class="kit-title title-titan">Титан</div>
             <div class="price">50 ₽</div>
-            <a href="https://donatex.gg/donate/baquew" target="_blank" class="btn-buy">Купить</a>
+            <a href="https://donatex.gg/donate/zwezdak22" target="_blank" class="btn-buy">Купить</a>
         </div>
 
+        <!-- Принц (картинка prince.png) -->
         <div class="kit-card">
-            <img src="https://i.imgur.com/8QO9U4r.png" alt="Prince">
+            <img src="prince.png" alt="Prince">
             <div class="kit-title title-prince">Принц</div>
             <div class="price">95 ₽</div>
-            <a href="https://donatex.gg/donate/baquew" target="_blank" class="btn-buy">Купить</a>
+            <a href="https://donatex.gg/donate/zwezdak22" target="_blank" class="btn-buy">Купить</a>
         </div>
 
+        <!-- Князь (картинка knyaz.png) -->
         <div class="kit-card">
-            <img src="https://i.imgur.com/8QO9U4r.png" alt="Knyaz">
+            <img src="knyaz.png" alt="Knyaz">
             <div class="kit-title title-knyaz">Князь</div>
             <div class="price">150 ₽</div>
-            <a href="https://donatex.gg/donate/baquew" target="_blank" class="btn-buy">Купить</a>
+            <a href="https://donatex.gg/donate/zwezdak22" target="_blank" class="btn-buy">Купить</a>
         </div>
     </div>
 
@@ -259,7 +263,7 @@
 
     <div class="donate-total">
         <h2>Просто хочешь поддержать проект?</h2>
-        <a href="https://donatex.gg/donate/baquew" target="_blank" class="btn-total">Задонатить</a>
+        <a href="https://donatex.gg/donate/zwezdak22" target="_blank" class="btn-total">Поддержать</a>
         <p class="note">После оплаты привилегия или коины будут выданы автоматически.</p>
     </div>
 </div>
