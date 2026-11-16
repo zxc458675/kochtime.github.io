@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 920" width="800" height="920" role="img" aria-label="Воксельный ночной остров в неоновом свете">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0618"/>
+      <stop offset=".45" stop-color="#1d0b3f"/>
+      <stop offset=".72" stop-color="#4a1152"/>
+      <stop offset="1" stop-color="#12081f"/>
+    </linearGradient>
+    <radialGradient id="moon" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff6ef"/>
+      <stop offset=".55" stop-color="#ffd9ef"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </radialGradient>
+    <radialGradient id="moonGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#f0abfc" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#f0abfc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b79cff"/>
+      <stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b2a9c"/>
+      <stop offset="1" stop-color="#241252"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8ff5e"/>
+      <stop offset="1" stop-color="#5fd83b"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1454"/>
+      <stop offset="1" stop-color="#0a0618"/>
+    </linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff2f8d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ff2f8d" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="fog2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3ee9ff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#3ee9ff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#3ee9ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="portal" cx=".5" cy=".55" r=".62">
+      <stop offset="0" stop-color="#fdf4ff"/>
+      <stop offset=".35" stop-color="#e879f9"/>
+      <stop offset=".7" stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ee9ff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#3ee9ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="blurSm" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="920" fill="url(#sky)"/>
+
+  <g fill="#e9d5ff" opacity=".75">
+    <circle cx="72" cy="96" r="1.6"/><circle cx="148" cy="54" r="1.1"/><circle cx="222" cy="128" r="1.3"/>
+    <circle cx="316" cy="72" r="1"/><circle cx="388" cy="150" r="1.5"/><circle cx="470" cy="48" r="1.1"/>
+    <circle cx="512" cy="104" r=".9"/><circle cx="704" cy="66" r="1.3"/><circle cx="748" cy="148" r="1.1"/>
+    <circle cx="636" cy="286" r="1"/><circle cx="96" cy="232" r="1.2"/><circle cx="188" cy="306" r=".9"/>
+    <circle cx="284" cy="258" r="1.1"/><circle cx="58" cy="380" r="1"/><circle cx="706" cy="392" r="1.2"/>
+    <circle cx="426" cy="238" r=".8"/><circle cx="770" cy="238" r=".9"/><circle cx="128" cy="472" r="1"/>
+  </g>
+
+  <circle cx="596" cy="188" r="150" fill="url(#moonGlow)"/>
+  <circle cx="596" cy="188" r="64" fill="url(#moon)"/>
+  <circle cx="596" cy="188" r="75" fill="none" stroke="#f0abfc" stroke-opacity=".35"/>
+
+  <g fill="#1b0d33">
+    <path d="M0 470 L90 392 L168 440 L252 362 L340 446 L430 404 L520 470 L610 420 L700 462 L800 408 V560 H0 Z" opacity=".85"/>
+  </g>
+  <g fill="#251047">
+    <path d="M0 520 L120 470 L210 512 L320 462 L410 520 L500 484 L620 532 L730 486 L800 520 V620 H0 Z" opacity=".9"/>
+  </g>
+
+  <!-- glow behind island -->
+  <ellipse cx="400" cy="600" rx="330" ry="190" fill="#8b5cf6" opacity=".22" filter="url(#blur)"/>
+
+  <!-- floating island left -->
+  <g>
+    <polygon points="96,470 196,470 196,502 96,502" fill="url(#top)"/>
+    <polygon points="96,502 196,502 196,512 96,512" fill="url(#grass)"/>
+    <polygon points="96,512 196,512 168,600 116,596" fill="url(#side)"/>
+    <polygon points="96,512 116,596 100,560 96,540" fill="#170a30"/>
+  </g>
+
+  <!-- floating island right -->
+  <g>
+    <polygon points="606,404 706,404 706,438 606,438" fill="url(#top)"/>
+    <polygon points="606,438 706,438 706,448 606,448" fill="url(#grass)"/>
+    <polygon points="606,448 706,448 672,546 630,540" fill="url(#side)"/>
+    <polygon points="706,448 630,540 690,500" fill="#170a30"/>
+    <rect x="640" y="368" width="26" height="36" fill="#3b1d77"/>
+    <rect x="640" y="368" width="26" height="7" fill="#c8ff5e"/>
+    <rect x="648" y="352" width="10" height="16" fill="#ff2f8d" opacity=".85"/>
+  </g>
+
+  <!-- main island -->
+  <g>
+    <polygon points="170,560 630,560 630,606 170,606" fill="url(#top)"/>
+    <polygon points="170,606 630,606 630,622 170,622" fill="url(#grass)"/>
+    <polygon points="170,622 630,622 560,820 300,834 214,742" fill="url(#side)"/>
+    <polygon points="170,622 214,742 186,676" fill="#1a0b36"/>
+    <polygon points="630,622 560,820 606,706" fill="#1e0d3d"/>
+    <polygon points="300,834 560,820 470,884 356,888" fill="#150827"/>
+    <polygon points="214,742 300,834 268,780" fill="#170a30"/>
+  </g>
+
+  <!-- base ruins -->
+  <g>
+    <rect x="352" y="470" width="72" height="90" fill="#3a1c78"/>
+    <rect x="352" y="470" width="72" height="12" fill="#a78bfa"/>
+    <rect x="368" y="502" width="16" height="22" fill="#ff2f8d" filter="url(#glow)" opacity=".9"/>
+    <rect x="432" y="500" width="58" height="60" fill="#2c1560"/>
+    <rect x="432" y="500" width="58" height="10" fill="#7c4dff"/>
+    <rect x="452" y="526" width="14" height="14" fill="#3ee9ff" filter="url(#glow)" opacity=".85"/>
+    <rect x="300" y="518" width="40" height="42" fill="#321a69"/>
+    <rect x="300" y="518" width="40" height="8" fill="#b79cff"/>
+    <rect x="520" y="536" width="44" height="24" fill="#321a69"/>
+    <rect x="520" y="536" width="44" height="6" fill="#b79cff"/>
+  </g>
+
+  <!-- portal -->
+  <g>
+    <rect x="286" y="466" width="10" height="94" fill="#0e0620"/>
+    <rect x="330" y="466" width="10" height="94" fill="#0e0620"/>
+    <rect x="286" y="458" width="54" height="10" fill="#0e0620"/>
+    <rect x="296" y="476" width="34" height="78" fill="url(#portal)" filter="url(#glow)"/>
+    <rect x="296" y="476" width="34" height="78" fill="url(#portal)" opacity=".5" filter="url(#blurSm)"/>
+    <rect x="286" y="458" width="54" height="4" fill="#7c4dff" opacity=".5"/>
+  </g>
+
+  <!-- trees -->
+  <g>
+    <rect x="238" y="514" width="10" height="46" fill="#241252"/>
+    <rect x="222" y="482" width="42" height="34" fill="#3a7d1f"/>
+    <rect x="222" y="482" width="42" height="10" fill="url(#grass)"/>
+    <rect x="228" y="492" width="10" height="10" fill="#c8ff5e" opacity=".55"/>
+    <rect x="250" y="500" width="8" height="8" fill="#2f6318"/>
+
+    <rect x="574" y="520" width="9" height="40" fill="#241252"/>
+    <rect x="558" y="492" width="38" height="30" fill="#3a7d1f"/>
+    <rect x="558" y="492" width="38" height="9" fill="url(#grass)"/>
+    <rect x="566" y="502" width="8" height="8" fill="#c8ff5e" opacity=".5"/>
+  </g>
+
+  <!-- waterfall on cliff edge -->
+  <g opacity=".8">
+    <rect x="600" y="624" width="17" height="104" fill="url(#water)" filter="url(#glow)"/>
+    <rect x="603" y="624" width="5" height="80" fill="#bdf5ff" opacity=".6"/>
+  </g>
+
+  <!-- floating cubes -->
+  <g opacity=".9">
+    <polygon points="128,392 160,392 160,424 128,424" fill="#6d3ef0"/>
+    <polygon points="160,392 176,384 176,416 160,424" fill="#3b1d77"/>
+    <polygon points="128,392 144,384 176,384 160,392" fill="#a78bfa"/>
+    <polygon points="486,352 508,352 508,374 486,374" fill="#8b5cf6" opacity=".7"/>
+    <polygon points="508,352 518,346 518,368 508,374" fill="#4c2a9e" opacity=".7"/>
+    <polygon points="486,352 496,346 518,346 508,352" fill="#c4b5fd" opacity=".7"/>
+    <polygon points="716,470 736,470 736,490 716,490" fill="#227a8c" opacity=".6"/>
+  </g>
+
+  <!-- broken pillar -->
+  <g>
+    <rect x="222" y="486" width="22" height="74" fill="#3a1c78"/>
+    <rect x="222" y="486" width="22" height="22" fill="#2c1560"/>
+  </g>
+
+  <!-- crystals -->
+  <g filter="url(#glow)">
+    <polygon points="700,618 716,586 730,618 716,646" fill="#3ee9ff" opacity=".9"/>
+    <polygon points="676,632 688,606 700,632 688,652" fill="#8b5cf6" opacity=".85"/>
+    <polygon points="128,640 142,608 156,640 142,668" fill="#b6ff3a" opacity=".75"/>
+  </g>
+
+  <!-- player silhouette -->
+  <g>
+    <rect x="472" y="440" width="26" height="26" rx="3" fill="#1a0e33"/>
+    <rect x="468" y="466" width="34" height="44" rx="3" fill="#241247"/>
+    <rect x="462" y="472" width="10" height="32" rx="3" fill="#2c1860"/>
+    <rect x="500" y="474" width="10" height="30" rx="3" fill="#2c1860"/>
+    <rect x="471" y="510" width="12" height="30" rx="3" fill="#1a0e33"/>
+    <rect x="489" y="510" width="12" height="30" rx="3" fill="#1a0e33"/>
+    <rect x="512" y="452" width="5" height="56" rx="2" fill="#8b5cf6" transform="rotate(16 514 480)"/>
+    <rect x="498" y="500" width="26" height="6" rx="3" fill="#b79cff" transform="rotate(16 511 503)"/>
+    <circle cx="485" cy="452" r="3" fill="#ff2f8d" filter="url(#glow)"/>
+  </g>
+
+  <!-- fog / light -->
+  <rect x="0" y="640" width="800" height="280" fill="url(#fog)"/>
+  <rect x="0" y="700" width="800" height="120" fill="url(#fog2)" opacity=".8"/>
+  <ellipse cx="400" cy="700" rx="260" ry="26" fill="#ff2f8d" opacity=".18" filter="url(#blurSm)"/>
+
+  <g fill="#ffd166">
+    <circle cx="250" cy="556" r="2.2" opacity=".9"/><circle cx="290" cy="600" r="1.5" opacity=".7"/>
+    <circle cx="540" cy="580" r="1.8" opacity=".8"/><circle cx="580" cy="628" r="1.4" opacity=".6"/>
+    <circle cx="330" cy="650" r="1.6" opacity=".7"/><circle cx="460" cy="620" r="1.2" opacity=".6"/>
+  </g>
+
+  <rect width="800" height="920" fill="url(#ground)" opacity=".12"/>
+</svg>
